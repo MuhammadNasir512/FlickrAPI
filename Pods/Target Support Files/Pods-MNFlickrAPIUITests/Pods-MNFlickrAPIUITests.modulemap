@@ -1,0 +1,6 @@
+framework module Pods_MNFlickrAPIUITests {
+  umbrella header "Pods-MNFlickrAPIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

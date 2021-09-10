@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="ImageItemTableCell" customModule="MNFlickrAPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IWa-mA-XEm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIf-rd-o4B">
+                        <rect key="frame" x="200" y="80" width="100" height="18"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30823221012037627" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="FEy-rW-eg4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="DIf-rd-o4B" firstAttribute="bottom" secondItem="IWa-mA-XEm" secondAttribute="bottom" id="Eie-Z6-BMi"/>
+                    <constraint firstAttribute="trailing" secondItem="DIf-rd-o4B" secondAttribute="trailing" constant="20" id="NAV-0s-FXx"/>
+                    <constraint firstItem="IWa-mA-XEm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bq9-SA-JVV"/>
+                    <constraint firstAttribute="trailing" secondItem="IWa-mA-XEm" secondAttribute="trailing" id="eNb-SV-J2J"/>
+                    <constraint firstAttribute="bottom" secondItem="IWa-mA-XEm" secondAttribute="bottom" constant="1" id="oaq-0j-gRf"/>
+                    <constraint firstItem="IWa-mA-XEm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="y6V-nP-2DD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="DIf-rd-o4B" id="enH-3U-dEz"/>
+                <outlet property="imageViewItem" destination="IWa-mA-XEm" id="MMJ-Cc-vxp"/>
+            </connections>
+            <point key="canvasLocation" x="-87" y="-64.5"/>
+        </tableViewCell>
+    </objects>
+</document>
